@@ -55,7 +55,7 @@ einer Verbraucherschlichtungsstelle teilzunehmen.</p>
 <hr class="divider">
 
 <h1>Datenschutzerklärung</h1>
-<p class="updated">App „Abendmahl" · Stand: <span class="placeholder">06.10.2026</span></p>
+<p class="updated">App „Abendmahl" · Stand: <span class="placeholder">15.10.2026</span></p>
 
 <div class="box">
   <strong>Kurz gesagt:</strong> Abendmahl ist bewusst datensparsam. Wir verlangen
@@ -159,7 +159,7 @@ Listen oder Rezepte ein.</p>
 <p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. b DSGVO (Erbringung der
 von dir angeforderten Funktion).</p>
 
-<h3>f) Anonyme Nutzungsstatistik (ab Version 1.0.5, erweitert mit 1.0.7)</h3>
+<h3>f) Anonyme Nutzungsstatistik (ab Version 1.0.5, erweitert mit 1.0.7 und 1.0.8)</h3>
 <p>Um zu verstehen, welche Funktionen genutzt werden, und die App zu verbessern,
 zählt die App Ereignisse und übermittelt sie mit der anonymen Gerätekennung,
 Zeitpunkt, Plattform und App-Version an unseren Server: Beginn und Ende einer
@@ -167,8 +167,13 @@ Sitzung, angetippte Funktionen (nur die Bezeichnung des Knopfs), Schritte der
 Einführung, erstellte Pläne (Zahl der Abende, Koch- und Einkaufstage), welche
 Gerichte vorgeschlagen und gewählt wurden (als Rezept-Nummer), der Stand von
 Freiaktionen und Guthaben, angesehene oder nicht verfügbare Werbevideos, deine
-Wahl im Einwilligungsfenster, ob ein Kauf stattgefunden hat (welches Paket) und
-bei einem Absturz der App die Fehlerart (ohne Fehlertext). Auf Android wird ab
+Wahl im Einwilligungsfenster, die Schritte eines Kaufs (welches Paket, ob der
+Store erreichbar war, ob der Kauf abgebrochen wurde und bei einem Fehler die
+technische Antwort des Stores), welche Hinweisfenster die App gezeigt hat (nur der
+Titel), bei einem Fehler oder Absturz der App die technische Fehlermeldung mit
+der Programmstelle, dem zuletzt gezeigten Bildschirm und dem zuletzt angetippten
+Knopf (nur Bezeichnungen) sowie beim nächsten Start, ob die App zuvor unerwartet
+beendet wurde. Auf Android wird ab
 Version 1.0.7 außerdem einmalig erfasst, über welche Kampagne die App installiert
 wurde (Quelle, Medium und Kampagnenname laut Google Play), ohne Kennungen der
 Werbenetzwerke. Eingegebene Texte, Einkaufsartikel, Notizen und Freundes-Daten
@@ -221,6 +226,24 @@ Dienst nicht.</p>
 <p>Weitere Informationen: <a href="https://firebase.google.com/support/privacy"
 target="_blank" rel="noopener">Datenschutz bei Firebase</a>.</p>
 
+<h3>c) Absturzberichte mit Firebase Crashlytics (nur Android, ab Version 1.0.8)</h3>
+<p>Stürzt die Android-Version ab oder tritt ein schwerer Fehler auf, sendet die
+App einen Absturzbericht an Firebase Crashlytics, einen Dienst der Google Ireland
+Limited (Anschrift wie unter a). Enthalten sind: die technische Fehlerstelle,
+Gerätetyp, Betriebssystem, App-Version, Zeitpunkt, freier Speicher, eine
+zufällige Installations-Kennung von Crashlytics, die anonyme Gerätekennung der
+App (dieselbe wie bei der Nutzungsstatistik) sowie die letzten Bedienschritte in
+der App (Bezeichnungen von Bildschirmen und Knöpfen). Rezepte, Zutaten, Notizen,
+Freundes-Daten oder die Werbe-ID deines Geräts werden nicht übermittelt. Zweck
+ist, Abstürze zu finden und zu beheben. Google kann die Daten in die USA
+übertragen; Google ist nach dem EU-US-Datenschutzrahmen (EU-U.S. Data Privacy
+Framework) zertifiziert. Die iOS-Version sendet keine Absturzberichte an
+Google.</p>
+<p><strong>Rechtsgrundlage:</strong> Art. 6 Abs. 1 lit. f DSGVO (berechtigtes
+Interesse an einer stabil funktionierenden App).</p>
+<p>Weitere Informationen: <a href="https://firebase.google.com/support/privacy"
+target="_blank" rel="noopener">Datenschutz bei Firebase</a>.</p>
+
 <h2>4. Hosting &amp; Server</h2>
 
 <h3>a) App-Server (Supabase)</h3>
@@ -252,7 +275,7 @@ target="_blank" rel="noopener">Datenschutzerklärung von GitHub</a>.</p>
 <h2>5. Weitergabe an Dritte</h2>
 <p>Eine Weitergabe deiner Daten findet nur im oben beschriebenen Umfang an die
 genannten Dienstleister (Google mit AdMob und, nur auf Android, Google Analytics
-für Firebase, Supabase, Anthropic, GitHub) statt, soweit dies für den Betrieb der
+für Firebase und Firebase Crashlytics, Supabase, Anthropic, GitHub) statt, soweit dies für den Betrieb der
 App und dieser Seite erforderlich ist. Ein Verkauf deiner Daten
 findet nicht statt.</p>
 
@@ -263,7 +286,8 @@ bewahren wir nur so lange auf, wie es für den genannten Zweck erforderlich ist.
 Freunde- und Gruppendaten bleiben gespeichert, solange die Freundschaft oder
 Gruppe besteht. Ereignisse der Nutzungsstatistik bewahren wir nur so lange auf,
 wie sie für die Auswertung erforderlich sind. Daten der Kampagnenmessung löscht
-Google nach der in Google Analytics eingestellten Aufbewahrungsfrist.</p>
+Google nach der in Google Analytics eingestellten Aufbewahrungsfrist,
+Absturzberichte nach 90 Tagen.</p>
 
 <h2>7. Deine Rechte</h2>
 <p>Dir stehen nach der DSGVO folgende Rechte zu: Auskunft (Art. 15), Berichtigung
@@ -288,7 +312,7 @@ rechtlichen Rahmenbedingungen ändern. Die jeweils aktuelle Fassung ist unter
 dieser Adresse abrufbar.</p>
 
 <footer>
-  Abendmahl · Impressum &amp; Datenschutz · <span class="placeholder">06.10.2026</span><br>
+  Abendmahl · Impressum &amp; Datenschutz · <span class="placeholder">15.10.2026</span><br>
 </footer>
 
 </body>
